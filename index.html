@@ -27,23 +27,69 @@
                     </a>
                 </div>
                 <div class="col-5 navigation nav-item">
-                    <a href="" class="nav-link">Home</a>
-                    <a href="" class="nav-link">Services</a>
-                    <a href="" class="nav-link">Portfolio</a>
-                    <a href="" class="nav-link">Team</a>
-                    <a href="" class="nav-link">Contact</a>
-                    <a href="" class="nav-link">About</a>
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+
                 </div>
                 <div class="button-1">
-                    <a href="" class="btn btn-outline-primary border-2 rounded-5">Hire Us</a>
+                    <button class="btn btn-outline-primary border-2 rounded-5" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offOne" aria-controls="offOne">Hire Us</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offOne" aria-labelledby="offOneLabel">
+                        <div class="offcanvas-header bg-white border-0 ">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="row g-3" action="">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" placeholder="Your email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" placeholder="Your full name" class="form-control" id="name">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contact" class="form-label">Contact</label>
+                                    <input type="text" class="form-control" id="contact" placeholder="Tel.">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Service Required</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>Web Design</option>
+                                        <option>CCTV Camera Installation</option>
+                                        <option>Network Installation</option>
+                                        <option>Computer Maintenance</option>
+                                        <option>Invite for Project</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+
+                            <div class="py-3">
+                                <b>Note:</b>
+                                <p>For the case of our pricing, we currently offer our services upfront, YOU pay us as
+                                    you will once the work is done. Once the work is not done to your expectation, you
+                                    are free not to pay us a single coin.</p>
+                                <b class="text-warning ">For more clarity, kindly give us a call or send us a whatsapp
+                                    message.</b>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="toggle-bar">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+
             </div>
         </nav>
     </div>
-    <main class="container">
+    <main class="container" data-bs-spy="scroll" data-bs-target="#navigation" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" tabindex="0">
         <div class="hero row">
             <div class="left col-lg-7 d-flex flex-column" id="">
                 <h1 class="col-md-7">
@@ -71,7 +117,7 @@
                 <img src="hero.png" class="floating-image-one" alt="">
             </div>
         </div>
-        <div class="tech bg-white fade-in pt-3">
+        <div class="tech bg-white fade-in pt-3" id="tech">
             <div class="">
                 <h2 class="text-center ">Technologies Used</h2>
             </div>
@@ -99,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class=" portfolio py-4" >
+        <div class=" portfolio py-4" id="portfolio">
             <div>
                 <h2 class="text-center " id="portfolio">Portfolio</h2>
             </div>
@@ -108,7 +154,7 @@
                     <div>
                         <h6 class="">Complete Projects</h6>
                     </div>
-                    <div class="d-flex flex-column ">
+                    <div class="d-flex align-items-center flex-column   ">
                         <span class="me-2 mb-3">
                             <div>
                                 <img src="afroverbal.PNG" alt="">
@@ -164,7 +210,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-us p-4 bg-warning-subtle ">
+        <div class="about-us p-4 bg-warning-subtle " id="about">
             <div>
                 <h2 class="text-center ">About Us</h2>
             </div>
@@ -189,7 +235,7 @@
         <div class="fade-in">
             <hr>
         </div>
-        <div class="services portfolio py-4">
+        <div class="services portfolio py-4" id="services">
             <div class="fade-in">
                 <h2 class="text-center ">Other Services</h2>
             </div>
@@ -206,9 +252,8 @@
                 </div>
                 <div class="fade-in col-12 mt-4">
                     <button class="btn btn-warning rounded-0 " type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Book Service</button>
-                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample "
-                        aria-labelledby="offcanvasExampleLabel">
+                        data-bs-target="#offTwo" aria-controls="offTwo">Book Service</button>
+                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offTwo " aria-labelledby="offTwoLabel">
                         <div class="offcanvas-header">
                             <button type="button" class="btn-close " data-bs-dismiss="offcanvas "
                                 aria-label="Close"></button>
@@ -306,7 +351,7 @@
                 </div>
             </div>
         </div>
-        <div class="team tech bg-white fade-in my-5">
+        <div class="team tech bg-white fade-in my-5" id="team">
             <div class="pt-3">
                 <h2 class="text-center ">Our Team</h2>
             </div>
@@ -382,7 +427,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact tech fade-in my-5">
+        <div class="contact tech fade-in my-5" id="contact">
             <div class="pt-3">
                 <h2 class="text-center ">Contact Us</h2>
             </div>
@@ -452,10 +497,10 @@
                 <div class="col-lg-6">
                     <a href="" class="">
                         <img src="logo.png" alt="">
-                    </a>    
+                    </a>
                 </div>
                 <div class="col-lg-6 pt-lg-3">
-                    <a href="" class="px-1">Privacy</a>|<a href="" class="px-1">Terms of Service</a>    
+                    <a href="" class="px-1">Privacy</a>|<a href="" class="px-1">Terms of Service</a>
                 </div>
             </div>
             <div class=" pt-3 d-flex justify-content-between flex-column">
