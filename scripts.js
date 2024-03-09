@@ -66,3 +66,36 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+/* ----------------fade-in------------------ */
+document.addEventListener("DOMContentLoaded", function() {
+
+    window.addEventListener("scroll", function() {
+
+        document.getElementById("navigation").classList.add("scrolled");
+
+        var elements = this.document.querySelectorAll(".fade-in");
+
+        elements.forEach(function(element) {
+
+            var position = element.getBoundingClientRect();
+
+            if(position.top < window.innerHeight && position.bottom >= 0) {
+
+                element.classList.add("active")
+
+            }
+
+        });
+
+    });
+
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    var elementFade = document.getElementById("fade-in-up");
+    elementFade.classList.add("fade-up");
+
+});

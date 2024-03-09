@@ -52,6 +52,67 @@ body.disabled-scroll {
     overflow: hidden;
 }
 
+
+
+/* --------------------fade-in---------------------- */
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+.fade-in.active{
+    opacity: 1;
+}
+/* -------------fade in up------------- */
+
+.fade-in-up{
+    opacity: 0;
+    transition: opacity 3s ease;
+    animation: 1.6s slideUp;
+}
+.fade-in-up.fade-up{
+    opacity: 1;
+}
+.wave{
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    content: "";
+    z-index: -1;
+}
+.vertical-shake{
+    animation: vertical-shake 1s infinite;
+}
+@keyframes vertical-shake {
+    0% {transform: scale(0);}
+    50% {transform: scale(35);}
+    100% {transform: scale(0);}
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+nav{
+    position: fixed !important;
+    background: rgb(211, 211, 211);
+    z-index: 100;
+}
+nav.scrolled{
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+main{
+    padding-top: 5rem;
+}
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -87,7 +148,9 @@ body {
 
 .hero {
     background: ;
-    height: calc(100vh - 64px);
+    height: auto;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
 }
 
 .hero .left {
@@ -103,8 +166,12 @@ body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 1000;
     font-style: normal;
-    height: 21rem;
+    height: ;
     
+}
+.hero .left h2{
+    font-weight: 1000;
+    font-size: 2.5rem;
 }
 
 .hero .left p {
@@ -133,6 +200,9 @@ body {
 .about-us h2{
     font-weight: 750;
 }
+.tech h2{
+    font-weight: 750;
+}
 .why-us{
     padding-top: 2rem;
 }
@@ -141,6 +211,16 @@ body {
 }
 .why-us .why-head{
     font-size: 1.5rem;
+}
+.why-us .carousel{
+    background: rgba(4, 0, 255, 0.123);
+}
+.why-us img{
+    width: 25rem !important;
+    height: 20rem !important;
+}
+.carousel-indicators{
+    position: relative !important;
 }
 
 @keyframes floater {
@@ -153,6 +233,34 @@ body {
         transform: translateY(10%);
         transition: ease 0.9s;
     }
+}
+
+
+.tech i{
+    font-size: 4rem;
+}
+
+.portfolio h2{
+    font-weight: 750;
+}
+.portfolio span{
+    width: 15rem;
+}
+.portfolio img{
+    width: 100%;
+    height: 8rem;
+    object-fit: ;
+}
+.team span{
+    margin: 0.5rem;
+}
+.team img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.contact.tech i{
+    font-size: 2rem;
 }
 
 
@@ -175,15 +283,26 @@ body {
 
     .hero {
         height: auto;
-        padding-top: 7rem;
+        padding-top: 6rem;
         padding-bottom: 5rem;
     }
     .hero .left h1 {
         font-family: "Ubuntu", sans-serif;
         font-weight: 1000;
         font-style: normal;
-        height: 12rem;
+        height: ;
+        font-size: 3.4rem;
         
+    }
+    .hero .left h2 {
+        font-size: 2rem;
+    }
+    .contact.tech i{
+        font-size: 1.7rem;
+    }
+    .why-us img{
+        width: 21rem !important;
+        height: 16rem !important;
     }
 }
 
@@ -193,7 +312,7 @@ body {
         font-family: "Ubuntu", sans-serif;
         font-weight: 1000;
         font-style: normal;
-        height: 11rem;    
+        height: ;    
     }
 
     .hero .left p {
@@ -204,9 +323,31 @@ body {
         padding-top: 4rem;
         padding-bottom: 2rem;
     }
+    .contact.tech i{
+        font-size: 1.5rem;
+    }
+    .why-us img{
+        width: 20rem !important;
+        height: 15rem !important;
+    }
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    .hero .left h1 {
+        font-size: 2.2rem;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 1000;
+        font-style: normal;
+        max-height: ;
+    }
+    .contact.tech i{
+        font-size: 1.3rem;
+    }
+    .hero .left h2 {
+        font-size: 1.6rem;
+    }
+    
+}
 
 @media screen and (max-width: 320px) {
     .hero .left h1 {
@@ -214,10 +355,18 @@ body {
         font-family: "Ubuntu", sans-serif;
         font-weight: 1000;
         font-style: normal;
-        height: 9rem;
+        min-height: ;
     }
 
     .hero .left p {
         font-size: 1.2rem;
     }
+    .contact.tech i{
+        font-size: 1.1rem;
+    }
+    .why-us img{
+        width: 17rem !important;
+        height: 12rem !important;
+    }
+    
 }
