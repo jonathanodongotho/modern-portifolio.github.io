@@ -26,15 +26,7 @@
                         <img src="logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-5 navigation nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="#team" class="nav-link">Team</a>
-                    <a href="#contact" class="nav-link">Contact</a>
 
-                </div>
                 <div class="button-1">
                     <button class="btn btn-outline-primary border-2 rounded-5" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offOne" aria-controls="offOne">Hire Us</button>
@@ -44,7 +36,7 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <form class="row g-3" action="">
+                            <form class="row g-3" action="" method="post">
                                 <div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Email</label>
                                     <input type="email" placeholder="Your email" class="form-control" id="inputEmail4">
@@ -105,11 +97,56 @@
                         about our services, put up an appointment for us below.
                     </p>
                     <div class="d-flex justify-content-between hero-btn-container w-100 flex-wrap ">
-                        <a href="" class="btn btn-primary rounded-5">Appointment</a>
+                        <button href="" class="btn btn-primary rounded-5" type="button" data-bs-toggle="modal"
+                            data-bs-target="#appoint">Appointment</button>
                         <span class="d-flex justify-content-center align-items-center ">
                             <span class="vertical-shake wave"></span>
                             <a href="#portfolio" class="  btn btn-outline-secondary rounded-5">Our Projects</a>
                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade " id="appoint" tabindex="-1" aria-labelledby="appointLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content  ">
+                        <div class="modal-header">
+                            <button class="btn-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                                <div class="py-2">
+                                    <h6 class="alert alert-info ">Make an appointment with us and we shall get back to
+                                        you</h6>
+                                </div>
+                                <div class="py-2">
+                                    <input type="text" name="" id="" placeholder="your name..." class="form-control ">
+                                </div>
+                                <div class="py-2">
+                                    <input type="email" name="" id="" placeholder="your email..." class="form-control ">
+                                </div>
+                                <div class="py-2">
+                                    <input type="tel" name="" id="" placeholder="tel." class="form-control ">
+                                </div>
+                                <div class="py-2">
+                                    <label for="" class="form-label text-info ">Platform to use</label>
+                                    <select name="" class="form-select " id="">
+                                        <option value="">Zoom</option>
+                                        <option value="">Phone Call</option>
+                                        <option value="">WhatsApp Call</option>
+                                        <option value="">Meet Up</option>
+                                    </select>
+                                </div>
+                                <div class="py-2">
+                                    <button type="submit" class="btn bg-warning ">Submit</button>
+                                </div>
+                                <div class="py-2">
+                                    <h6 class="alert alert-warning">If you prefer appointment via WhatsApp Call, please
+                                        provide a contact that's registered on WhatsApp</h6>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,62 +187,82 @@
                 <h2 class="text-center " id="portfolio">Portfolio</h2>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-12">
                     <div>
-                        <h6 class="">Complete Projects</h6>
+                        <h6 class="text-decoration-underline ">Complete Projects</h6>
                     </div>
-                    <div class="d-flex align-items-center flex-column   ">
-                        <span class="me-2 mb-3">
-                            <div>
+                    <div class="my-5 d-flex justify-content-between   flex-column   ">
+                        <div class="mb-3 port-item">
+                            <div class="mb-4">
                                 <img src="afroverbal.PNG" alt="">
                             </div>
                             <div>
-                                <a href="" class="btn btn-primary w-100 rounded-0 ">Peview</a>
+                                <h6>AFROVERBAL</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cum.</p>
                             </div>
-                        </span>
+                            <div>
+                                <a href="" class="btn btn-outline-secondary  w-100 rounded-0 ">Peview</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12">
                     <div>
-                        <h6>Ongoing Projects</h6>
+                        <h6 class="text-decoration-underline ">Ongoing Projects</h6>
                     </div>
-                    <div class="d-flex flex-wrap ">
-                        <span class="me-2 mb-3">
-                            <div>
+                    <div class="my-5 d-flex flex-wrap justify-content-between ">
+                        <div class="mb-3 port-item">
+                            <div class="mb-4">
                                 <img src="vexy.PNG" alt="">
                             </div>
                             <div>
-                                <a href="https://jonathanodongotho.github.io/vexy.github.io/"
-                                    class="btn btn-primary w-100 rounded-0 ">Peview</a>
+                                <h6>VEXY</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cum.</p>
                             </div>
-                        </span>
-                        <span class="me-2 mb-3">
                             <div>
+                                <a href="https://jonathanodongotho.github.io/vexy.github.io/"
+                                    class="btn btn-outline-secondary  w-100 rounded-0 ">Peview</a>
+                            </div>
+                        </div>
+                        <div class="mb-3 port-item">
+                            <div class="mb-4">
                                 <img src="yaffe.PNG" alt="">
                             </div>
                             <div>
-                                <a href="https://jonathanodongotho.github.io/Yaffe-ecommerce-web-application.github.io/"
-                                    class="btn btn-primary w-100 rounded-0 ">Peview</a>
+                                <h6>YAFFE</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cum.</p>
                             </div>
-                        </span>
-                        <span class="me-2 mb-3">
                             <div>
+                                <a href="https://jonathanodongotho.github.io/Yaffe-ecommerce-web-application.github.io/"
+                                    class="btn btn-outline-secondary  w-100 rounded-0 ">Peview</a>
+                            </div>
+                        </div>
+                        <div class="mb-3 port-item">
+                            <div class="mb-4">
                                 <img src="movie.PNG" alt="">
                             </div>
                             <div>
-                                <a href="https://jonathanodongotho.github.io/movie-website.github.io/"
-                                    class="btn btn-primary w-100 rounded-0 ">Peview</a>
+                                <h6>MOVIE PLANET</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cum.</p>
                             </div>
-                        </span>
-                        <span class="me-2 mb-3">
                             <div>
+                                <a href="https://jonathanodongotho.github.io/movie-website.github.io/"
+                                    class="btn btn-outline-secondary w-100 rounded-0 ">Peview</a>
+                            </div>
+                        </div>
+                        <div class="mb-3 port-item">
+                            <div class="mb-4">
                                 <img src="ugaboys.PNG" alt="">
                             </div>
                             <div>
-                                <a href="https://jonathanodongotho.github.io/ugaboys-web.github.io/"
-                                    class="btn btn-primary w-100 rounded-0 ">Peview</a>
+                                <h6>UGABOYS</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cum.</p>
                             </div>
-                        </span>
+                            <div>
+                                <a href="https://jonathanodongotho.github.io/ugaboys-web.github.io/"
+                                    class="btn btn-outline-secondary  w-100 rounded-0 ">Peview</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,15 +308,45 @@
                         Maintenance</span>
                 </div>
                 <div class="fade-in col-12 mt-4">
-                    <button class="btn btn-warning rounded-0 " type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offTwo" aria-controls="offTwo">Book Service</button>
-                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offTwo " aria-labelledby="offTwoLabel">
-                        <div class="offcanvas-header">
-                            <button type="button" class="btn-close " data-bs-dismiss="offcanvas "
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <p>some text</p>
+                    <button class="btn btn-warning rounded-0 " type="button" data-bs-toggle="modal"
+                        data-bs-target="#book" aria-controls="offTwo">Book Service</button>
+
+                </div>
+                <div class="modal fade " id="book" tabindex="-1" aria-labelledby="bookLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content  ">
+                            <div class="modal-header">
+                                <button class="btn-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="post">
+                                    <div class="py-2">
+                                        <input type="text" name="" id="" placeholder="your name..."
+                                            class="form-control ">
+                                    </div>
+                                    <div class="py-2">
+                                        <input type="email" name="" id="" placeholder="your email..."
+                                            class="form-control ">
+                                    </div>
+                                    <div class="py-2">
+                                        <input type="tel" name="" id="" placeholder="tel." class="form-control ">
+                                    </div>
+                                    <div class="py-2">
+                                        <label for="" class="form-label text-info">Service needed</label>
+                                        <select name="" class="form-select " id="">
+                                            <option value="">Web Redesign</option>
+                                            <option value="">CCTV camera installation</option>
+                                            <option value="">Website Maintenance</option>
+                                            <option value="">Computer Maintenance</option>
+                                        </select>
+                                    </div>
+                                    <div class="py-2">
+                                        <button type="submit" class="btn bg-warning ">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -423,7 +510,43 @@
                     </span>
                 </div>
                 <div class="py-3">
-                    <button class="btn btn-outline-secondary ">Join Team</button>
+                    <button class="btn btn-outline-secondary " type="button" data-bs-toggle="modal" data-bs-target="#join">Join Team</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade " id="join" tabindex="-1" aria-labelledby="joinLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content  ">
+                    <div class="modal-header">
+                        <button class="btn-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <div class="py-2">
+                                <input type="text" name="" id="" placeholder="your name..." class="form-control ">
+                            </div>
+                            <div class="py-2">
+                                <input type="email" name="" id="" placeholder="your email..." class="form-control ">
+                            </div>
+                            <div class="py-2">
+                                <input type="tel" name="" id="" placeholder="tel." class="form-control ">
+                            </div>
+                            <div class="py-2">
+                                <label for="" class="form-label text-info ">Department to join</label>
+                                <select name="" class="form-select " id="">
+                                    <option value="">FrontEnd designer</option>
+                                    <option value="">BackEnd developer</option>
+                                    <option value="">Fullstack developer</option>
+                                    <option value="">Learner</option>
+                                </select>
+                            </div>
+                            <div class="py-2">
+                                <button type="submit" class="btn bg-warning ">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -493,19 +616,47 @@
     </main>
     <footer>
         <div class="bg-white container py-4">
-            <div class="brand row pb-1 d-flex justify-content-between ">
+            <div class=" brand row pb-1 d-flex justify-content-between ">
                 <div class="col-lg-6">
-                    <a href="" class="">
-                        <img src="logo.png" alt="">
-                    </a>
+                    <div class="">
+                        <a href="" class="">
+                            <img src="logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class=" pt-3 d-flex justify-content-between flex-column">
+                        <h6>Copyright &#169; O technologies</h6>
+                        <a href="https://www.vecteezy.com/free-vector/development">Development Vectors by Vecteezy</a>
+                    </div>
+                    <div class="">
+                        <a href="" class="pe-1 text-secondary">Privacy</a>|<a href="" class="px-1 text-secondary">Terms
+                            of Service</a>
+                    </div>
                 </div>
-                <div class="col-lg-6 pt-lg-3">
-                    <a href="" class="px-1">Privacy</a>|<a href="" class="px-1">Terms of Service</a>
+                <div class="col-lg-6 bg-secondary-subtle p-lg-4">
+                    <div>
+                        <h6>Social Media</h6>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
+                                <i class="fa-brands fa-whatsapp text-success "></i>
+                                <p class="my-0 ms-2">WhatsApp</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
+                                <i class="fa-brands fa-x-twitter text-black  "></i>
+                                <p class="my-0 ms-2">X</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none d-flex flex-row align-items-center text-secondary ">
+                                <i class="fa-brands fa-github"></i>
+                                <p class="my-0 ms-2">Github</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class=" pt-3 d-flex justify-content-between flex-column">
-                <h6>&#169; concept, 2024</h6>
-                <a href="https://www.vecteezy.com/free-vector/development">Development Vectors by Vecteezy</a>
             </div>
         </div>
     </footer>
